@@ -26,4 +26,7 @@ class AuthRemoteDataSource {
 
     return user;
   }
+  Future<void> logout() async {
+  await firebaseAuth.signOut();
+}
 }

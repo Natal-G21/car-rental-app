@@ -25,4 +25,8 @@ class AuthRepositoryImpl implements AuthRepository {
       email: firebaseUser.email ?? email,
     );
   }
+  @override
+  Future<void> logout() {
+  return remoteDataSource.logout();
+}
 }
